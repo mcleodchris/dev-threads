@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "dev-threads": {
+      "appLocation": ".",
+      "outputLocation": "_site",
+      "appBuildCommand": "npm run build",
+      "run": "npm run start",
+      "appDevserverUrl": "http://localhost:8080"
+    }
+  }
+}

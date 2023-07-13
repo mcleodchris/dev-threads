@@ -2,24 +2,16 @@
 <html lang="en">
   <head>
     <!-- https://github.com/joshbuchea/HEAD -->
-
-    <!-- Recommended -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Meta -->
-    <meta name="description" content="{{ metadata.description }}" />
-    <meta name="generator" content="{{ eleventy.generator }}" />
-
-    
-    <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
-
+    <!-- Recommended --> <meta charset="utf-8"/>
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Meta -->
+    <meta name="description" content="{{ metadata.description }}"/>
+    <meta name="generator" content="{{ eleventy.generator }}"/>
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
     <title>{{ title or metadata.title }}</title>
-
-    <link rel="stylesheet" href="{{ '/site.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/site.css' | url }}"/>
   </head>
-
-  <body class="font-sans leading-normal tracking-normal text-gray-900">
+  <body class="font-sans leading-normal tracking-normal text-gray-900  bg-slate-100">
     {{ content | safe }}
   </body>
 </html>

@@ -1,5 +1,5 @@
 const { ThreadsAPI } = require("threads-api");
-const developers = require("./developers.json");
+const developers = require("../developers.json");
 
 async function getProfileData(threadsAPI, developer) {
   const userId = await threadsAPI.getUserIDfromUsername(developer.userame);

@@ -1,11 +1,16 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 const img = require("./shortcodes/img.js");
-const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
-const { eleventyImagePlugin } = require("@11ty/eleventy-img");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("img", img);
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addShortcode("replace", (value, search, replacement) =>
+    value.replaceAll(search, replacement)
+  );
 
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);

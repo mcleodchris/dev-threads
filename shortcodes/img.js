@@ -14,7 +14,7 @@ module.exports = async function (url, alt, widths, sizes = "", cls = "") {
     formats: ["avif", "jpeg"],
     urlPath: "/img-cache/",
     outputDir: "./_site/img-cache/",
-    useCache: false,
+    useCache: true,
     sharpJpegOptions: {
       quality: 85,
     },
