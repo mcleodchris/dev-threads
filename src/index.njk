@@ -17,8 +17,10 @@ pagination:
       <div class="bg-white shadow-md hover:shadow-lg grid col-span-1 w-100 p-4 border grid-cols-2 border-slate-300 rounded">
         <div class="items-center grid col-span-2 grid-cols-2">
           <h2 class="text-lg font-bold col-span-1">
-            {{ profile.full_name }}
-            <small class="block text-slate-700 font-normal">@{{ profile.username }}</small>
+            <a href="https://threads.net/@{{ profile.username }}">{{ profile.full_name }}</a>
+            <small class="block text-slate-700 font-normal">
+              <a href="https://threads.net/@{{ profile.username }}">@{{ profile.username }}</a>
+            </small>
             {%- if profile.is_private %}
               <small class="is-private">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -45,7 +47,7 @@ pagination:
               </small>
             {%- endif %}
           </h2>
-          {% img profile.profile_pic_url, "profile picture of profile.full_name", "120", "", "rounded-full col-span-1" %}
+          <a href="https://threads.net/@{{ profile.username }}" class="col-span-1">{% img profile.profile_pic_url, "profile picture of profile.full_name", "120", "", "rounded-full col-span-1" %}</a>
         </div>
         <div class="col-span-2 my-2 text-sm leading-loose">
           <p>
