@@ -1,7 +1,7 @@
 {
-  "name": "windty",
+  "name": "dev-threads",
   "version": "1.0.0",
-  "description": "Simple 11ty template with tailwind",
+  "description": "generates a static site directory of Threads profiles",
   "scripts": {
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
@@ -13,30 +13,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/distantcam/windty.git"
+    "url": "https://github.com/mcleodchris/dev-threads.git"
   },
   "keywords": [
     "eleventy",
     "11ty",
-    "tailwind"
+    "tailwind",
+    "threads"
   ],
-  "author": "Cam MacFarland",
+  "author": "Chris McLeod",
   "license": "Unlicense",
-  "homepage": "https://github.com/distantcam/windty#readme",
+  "homepage": "https://github.com/mcleodchris/dev-threads#readme",
   "bugs": {
     "url": "https://github.com/distantcam/windty/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.1",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
+    "dotenv": "^16.3.1",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.25",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "rimraf": "^5.0.1",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "threads-api": "^1.4.1"
   }
 }

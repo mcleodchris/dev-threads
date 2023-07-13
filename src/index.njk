@@ -1,0 +1,40 @@
+---
+layout: default
+pagination:
+    data: profileData
+    size: 50
+---
+
+<main class="container">
+  <header class="">
+    <h1 class="">
+      {{ metadata.title }}
+    </h1>
+    <p class="">{{ metadata.description }}</p>
+  </header>
+  <section class="container mx-auto grid lg:grid-cols-5 lg:grid-rows-10 gap-2">
+
+    {%- for profile in pagination.items %}
+      <div class="grid col-span-1 w-100 grid-cols-1">
+        <h2>{{profile.full_name}}</h2>
+        {% img profile.profile_pic_url, "profile picture of profile.full_name", "120" %}
+        <p>{{profile.biography}}</p>
+      </div>
+    {%- endfor %}
+
+  </section>
+  {%- if pagination.pages.length > 1 %}
+  <nav aria-labelledby="my-pagination">
+    <h2 id="my-pagination">This is my Pagination</h2>
+    <ol>
+      <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li>
+      <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+  {%- for pageEntry in pagination.pages %}
+      <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+  {%- endfor %}
+      <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+      <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
+    </ol>
+  </nav>
+  {%- endif %}
+</main>
