@@ -10,9 +10,9 @@ pagination:
   <div class="bg-white shadow-md hover:shadow-lg grid col-span-1 w-100 p-4 m-2 border grid-cols-2 border-slate-300 rounded">
     <div class="items-center grid col-span-2 grid-cols-2">
       <h2 class="text-lg font-bold col-span-1">
-        <a href="https://threads.net/@{{ profile.username }}">{{ profile.full_name }}</a>
+        <a href="https://threads.net/@{{ profile.username }}" rel="noopener noreferrer">{{ profile.full_name }}</a>
         <small class="block text-slate-700 font-normal">
-          <a href="https://threads.net/@{{ profile.username }}">@{{ profile.username }}</a>
+          <a rel="noopener noreferrer" href="https://threads.net/@{{ profile.username }}">@{{ profile.username }}</a>
         </small>
         {%- if profile.is_private %}
           <small class="is-private">
@@ -40,7 +40,7 @@ pagination:
           </small>
         {%- endif %}
       </h2>
-      <a href="https://threads.net/@{{ profile.username }}" class="col-span-1">{% img profile.profile_pic_url, "profile picture of profile.full_name", "120", "", "rounded-full col-span-1" %}</a>
+      <a href="https://threads.net/@{{ profile.username }}" rel="noopener noreferrer" class="col-span-1">{% img profile.profile_pic_url, "profile picture of profile.full_name", "120", "", "rounded-full col-span-1" %}</a>
     </div>
     <div class="col-span-2 my-2 text-sm leading-loose">
       <p>
@@ -48,7 +48,10 @@ pagination:
       </p>
     </div>
     <div class="col-span-2 my-2">
-      <a href="https://threads.net/@{{ profile.username }}" class="text-sky-700 hover:text-sky-900 align-baseline text-base">
+      <a
+        href="https://threads.net/@{{ profile.username }}"
+        rel="noopener noreferrer"
+        class="text-sky-700 hover:text-sky-900 align-baseline text-base">
         Go to profile on Threads
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 inline">
           <path
