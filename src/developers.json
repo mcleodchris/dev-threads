@@ -1,6 +1,6 @@
 [
   {
-    "userame": "mstrkapowski",
+    "username": "mstrkapowski",
     "topics": [
       "general",
       "azure",
@@ -10,12 +10,7 @@
     ]
   },
   {
-    "userame": "mikevdev",
-    "topics": [
-      "rust",
-      "nodejs",
-      "careers",
-      "cats"
-    ]
+    "username": "mikevdev",
+    "topics": ["rust", "nodejs", "careers", "cats"]
   }
 ]

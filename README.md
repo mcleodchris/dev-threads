@@ -16,7 +16,7 @@ The updated file should look something like this:
 ```JSON
 [
   {
-    "userame": "mstrkapowski",
+    "username": "mstrkapowski",
     "topics": [
       "general",
       "azure",
@@ -27,7 +27,7 @@ The updated file should look something like this:
   },
   // snip .....
   {
-    "userame": "yournamehere",
+    "username": "yournamehere",
     "topics": [
       "ai",
       "machine learning",
