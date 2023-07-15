@@ -8,7 +8,7 @@ Dev-Threads is a directory of software engineering and related accounts found on
 
 :one: First, fork this repository using the button near the top of the repository homepage.
 
-:two: Secondly, add an entry with your username to the array in `./src/developers.json`, along with an optional array of a few topics which describe what you post about on Threads.
+:two: Secondly, add an entry with your username to the array in `./src/developers.json`, along with an optional array of a few topics which describe what you post about on Threads. **Please do not add any accounts you do not control**.
 
 The format is a regular JavaScript object in an array. Don't forget to add the comma after the preceding entry!
 The updated file should look something like this:
@@ -42,6 +42,8 @@ The updated file should look something like this:
 :three: Finally, Submit a Pull Request back to this repository.
 
 At busy/holiday times it might take a while to review and approve the PR, but all will be looked at. While it should be rare, the admin reserves the right to reject a submission for any reason.
+
+Once a PR is merged, it will take a few minutes for the pipelines to rebuild the site - after which your profile will be visible on [https://dev-threads.directory/](https://dev-threads.directory/)
 
 :no_pedestrians: If you want to remove your profile from the directory, please submit a new PR with your data removed from `./src/developers.json`.
 
