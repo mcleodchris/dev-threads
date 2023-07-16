@@ -56,5 +56,17 @@
   {
     "username": "aqwergqwec",
     "topics": ["Frontend Development", "Engineering Management", "React", "TypeScript", "Startups"]
+  },
+  {
+    "username": "TheOllieJT",
+    "topics": [
+      "Fullstack",
+      "Svelte",
+      "Typescript",
+      "Figma",
+      "ui design",
+      "nodejs",
+      "UK"
+    ]
   }
 ]
