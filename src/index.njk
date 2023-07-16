@@ -10,7 +10,13 @@ pagination:
   <div class="bg-white shadow-md hover:shadow-lg grid col-span-1 w-100 p-4 m-2 border grid-cols-2 border-slate-300 rounded">
     <div class="items-center grid col-span-2 grid-cols-2">
       <h2 class="text-lg font-bold col-span-1">
-        <a href="https://threads.net/@{{ profile.username }}" rel="noopener noreferrer">{{ profile.full_name }}</a>
+        <a href="https://threads.net/@{{ profile.username }}" rel="noopener noreferrer">
+          {% if profile.full_name %}
+            {{ profile.full_name }}
+          {% else %}
+            {{ profile.username }}
+          {% endif %}
+        </a>
         <small class="block text-slate-700 font-normal">
           <a rel="noopener noreferrer" href="https://threads.net/@{{ profile.username }}">@{{ profile.username }}</a>
         </small>
