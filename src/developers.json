@@ -10,6 +10,10 @@
     ]
   },
   {
+    "username": "mikevdev",
+    "topics": ["rust", "nodejs", "careers", "cats"]
+  },
+  {
     "username": "adir.sl",
     "topics": [
       "product design",
@@ -18,10 +22,6 @@
       "figma",
       "random"
     ]
-  },
-  {
-    "username": "mikevdev",
-    "topics": ["rust", "nodejs", "careers", "cats"]
   },
   {
     "username": "viktorvillalobos",
