@@ -10,9 +10,23 @@
     ]
   },
   {
+    "username": "adir.sl",
+    "topics": [
+      "product design",
+      "frontend dev",
+      "html and css",
+      "figma",
+      "random"
+    ]
+  },
+  {
     "username": "mikevdev",
     "topics": ["rust", "nodejs", "careers", "cats"]
-  },  
+  },
+  {
+    "username": "viktorvillalobos",
+    "topics": ["python", "nodejs", "indiehacking", "startups", "crossfit"]
+  },
   {
     "username": "lucky.makau",
     "topics": [
