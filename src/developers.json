@@ -36,5 +36,9 @@
       "MySql",
       "Django"
     ]
+  },
+  {
+    "username": "devdalgic",
+    "topics": ["mobile", "react", "android", "kotlin"]
   }
 ]
