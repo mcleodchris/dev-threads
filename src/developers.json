@@ -47,15 +47,36 @@
   },
   {
     "username": "sdairsab",
-    "topics": ["Data Engineering", "ClickHouse", "Analytics", "Dogs", "Startups"]
+    "topics": [
+      "Data Engineering",
+      "ClickHouse",
+      "Analytics",
+      "Dogs",
+      "Startups"
+    ]
   },
   {
     "username": "beardscript",
-    "topics": ["Web Development", "three.js", "Game Development", "Rogue Engine", "WebGL", "WebXR", "AR", "VR"]
+    "topics": [
+      "Web Development",
+      "three.js",
+      "Game Development",
+      "Rogue Engine",
+      "WebGL",
+      "WebXR",
+      "AR",
+      "VR"
+    ]
   },
   {
     "username": "aqwergqwec",
-    "topics": ["Frontend Development", "Engineering Management", "React", "TypeScript", "Startups"]
+    "topics": [
+      "Frontend Development",
+      "Engineering Management",
+      "React",
+      "TypeScript",
+      "Startups"
+    ]
   },
   {
     "username": "TheOllieJT",
@@ -72,21 +93,35 @@
   {
     "username": "solomonoflagos",
     "topics": [
-      "Frontend Development"
+      "Frontend Development",
       "React",
       "Typescript",
       "CSS",
       "AI",
-      "Software Engineering"
+      "Software Engineering",
       "MMA"
     ]
   },
   {
     "username": "indoor_keith",
-    "topics": ["javascript", "web development", "game development", "outdoors", "photography", "cats"]
+    "topics": [
+      "javascript",
+      "web development",
+      "game development",
+      "outdoors",
+      "photography",
+      "cats"
+    ]
   },
   {
     "username": "caseygoodhew",
-    "topics": ["fullstack", "nextjs", "bbq", "dadjokes", "nodejs", "cool engineering"]
+    "topics": [
+      "fullstack",
+      "nextjs",
+      "bbq",
+      "dadjokes",
+      "nodejs",
+      "cool engineering"
+    ]
   }
 ]
