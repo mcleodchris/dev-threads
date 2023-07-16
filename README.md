@@ -39,7 +39,9 @@ The updated file should look something like this:
 
 ```
 
-:three: Finally, Submit a Pull Request back to this repository.
+Optionally: build and preview locally. `npm install` then `npm run start`. The site should load on [http://localhost:8080/]
+
+:three: Finally, commit, and submit a Pull Request back to this repository. In your commit message, please put `[no ci]`, until I can fix an annoying pipeline issue. (This isn't required, it will just save us both a few email notifications).
 
 At busy/holiday times it might take a while to review and approve the PR, but all will be looked at. While it should be rare, the admin reserves the right to reject a submission for any reason.
 
