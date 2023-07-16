@@ -22,5 +22,9 @@
   {
     "username": "mikevdev",
     "topics": ["rust", "nodejs", "careers", "cats"]
+  },
+  {
+    "username": "viktorvillalobos",
+    "topics": ["python", "nodejs", "indiehacking", "startups", "crossfit"]
   }
 ]
