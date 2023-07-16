@@ -26,5 +26,15 @@
   {
     "username": "viktorvillalobos",
     "topics": ["python", "nodejs", "indiehacking", "startups", "crossfit"]
+  },
+  {
+    "username": "lucky.makau",
+    "topics": [
+      "General",
+      "learning & development",
+      "Laravel",
+      "MySql",
+      "Django"
+    ]
   }
 ]
