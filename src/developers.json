@@ -48,5 +48,17 @@
   {
     "username": "sdairsab",
     "topics": ["Data Engineering", "ClickHouse", "Analytics", "Dogs", "Startups"]
+  },
+  {
+    "username": "TheOllieJT",
+    "topics": [
+      "Fullstack",
+      "Svelte",
+      "Typescript",
+      "Figma",
+      "ui design",
+      "nodejs",
+      "UK"
+    ]
   }
 ]
