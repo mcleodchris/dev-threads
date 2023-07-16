@@ -12,5 +12,9 @@
   {
     "username": "mikevdev",
     "topics": ["rust", "nodejs", "careers", "cats"]
+  },
+  {
+    "username": "devdalgic",
+    "topics": ["mobile", "react", "android", "kotlin"]
   }
 ]
