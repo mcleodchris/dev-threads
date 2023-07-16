@@ -48,5 +48,9 @@
   {
     "username": "sdairsab",
     "topics": ["Data Engineering", "ClickHouse", "Analytics", "Dogs", "Startups"]
+  },
+  {
+    "username": "beardscript",
+    "topics": ["Web Development", "three.js", "Game Development", "Rogue Engine", "WebGL", "WebXR", "AR", "VR"]
   }
 ]
