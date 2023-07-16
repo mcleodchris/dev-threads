@@ -12,5 +12,15 @@
   {
     "username": "mikevdev",
     "topics": ["rust", "nodejs", "careers", "cats"]
+  },  
+  {
+    "username": "lucky.makau",
+    "topics": [
+      "General",
+      "learning & development",
+      "Laravel",
+      "MySql",
+      "Django"
+    ]
   }
 ]
