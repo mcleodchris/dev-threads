@@ -205,5 +205,19 @@
       "Cats",
       "CSS"
     ]
+  },
+  {
+    "username": "anthonyisrael.dev",
+    "topics": [
+      "Frontend Developer",
+      "React",
+      "Typescript",
+      "Javascript",
+      "Web Development",
+      "CSS",
+      "Prisma",
+      "Nextjs",
+      "Gatsby"
+    ]
   }
 ]
