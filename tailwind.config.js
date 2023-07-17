@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        player2: ['"Press Start 2P"', ...defaultTheme.fontFamily.mono],
+        player2: ["PressStart2P", ...defaultTheme.fontFamily.mono],
       },
     },
-    plugins: [],
+    plugins: [require("daisyui")],
   },
 };

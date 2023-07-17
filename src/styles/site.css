@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+layer base {
+  @font-face {
+    font-family: "PressStart2P";
+    src: local('"Press Start 2P"'),
+      url("/fonts/PressStart2P-Regular.woff") format("woff"),
+      url("/fonts/PressStart2P-Regular.woff2") format("woff");
+  }
+}
