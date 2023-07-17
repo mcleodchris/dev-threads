@@ -135,5 +135,17 @@
       "CSS",
       "learning & development"
     ]
+  },
+  {
+    "username": "rbastien",
+    "topics": [
+      "fullstack",
+      "vuejs",
+      "rails",
+      "ruby",
+      "web development",
+      "javascript",
+      "birds"
+    ]
   }
 ]
