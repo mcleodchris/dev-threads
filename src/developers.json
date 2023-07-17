@@ -11,7 +11,12 @@
   },
   {
     "username": "mikevdev",
-    "topics": ["rust", "nodejs", "careers", "cats"]
+    "topics": [
+      "rust",
+      "nodejs",
+      "careers",
+      "cats"
+    ]
   },
   {
     "username": "adir.sl",
@@ -25,7 +30,13 @@
   },
   {
     "username": "viktorvillalobos",
-    "topics": ["python", "nodejs", "indiehacking", "startups", "crossfit"]
+    "topics": [
+      "python",
+      "nodejs",
+      "indiehacking",
+      "startups",
+      "crossfit"
+    ]
   },
   {
     "username": "lucky.makau",
@@ -39,11 +50,21 @@
   },
   {
     "username": "devdalgic",
-    "topics": ["mobile", "react", "android", "kotlin"]
+    "topics": [
+      "mobile",
+      "react",
+      "android",
+      "kotlin"
+    ]
   },
   {
     "username": "arthur_horbenko",
-    "topics": ["web", "frontend", "fullstack", "nodejs"]
+    "topics": [
+      "web",
+      "frontend",
+      "fullstack",
+      "nodejs"
+    ]
   },
   {
     "username": "sdairsab",
@@ -171,6 +192,18 @@
       "Web Development",
       "Javascript",
       "Svelte"
+    ]
+  },
+  {
+    "username": "vivi.codes_",
+    "topics": [
+      "Frontend Developer",
+      "React",
+      "Typescript",
+      "Javascript",
+      "Web Development",
+      "Cats",
+      "CSS"
     ]
   }
 ]
