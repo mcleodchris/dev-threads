@@ -3993,10 +3993,10 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-threads-api@^1.4.2:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/threads-api/-/threads-api-1.4.5.tgz#86a1d1cc5b98d9653008891453337ee25c718d77"
-  integrity sha512-vU4dqF20D/ovYJWSBjcRFII4FkVfmhqKLC85DbjG7DdbrkbFvBYo8gCCYBqCkZaBSdNM8gI4AT3DolYVIA0G9w==
+threads-api@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/threads-api/-/threads-api-1.4.6.tgz#ce298e3c7cbdd20e29ee9e70acf6066b8eb3988c"
+  integrity sha512-e6JXCiVIDgVDdkmK2lQod4eQonifBpOWpqBE9KD4/gPWAOQ6rz3cilhhRSap+yhCQ0AAtOXYuIjvTQi0xmvrTg==
   dependencies:
     "@swc/cli" "^0.1.62"
     "@swc/core" "^1.3.68"
