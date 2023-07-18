@@ -9,7 +9,8 @@
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
     "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir _site",
-    "clean": "rimraf _site"
+    "clean": "rimraf _site",
+    "debug": "cross-env DEBUG=Eleventy* run-p start:*"
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,11 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-plugin-webc": "^0.11.1",
     "autoprefixer": "^10.4.14",
+    "bottleneck": "^2.19.5",
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
     "daisyui": "^3.2.1",
@@ -43,6 +46,6 @@
     "postcss-import": "^15.1.0",
     "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.3",
-    "threads-api": "^1.4.6"
+    "threads-api": "^1.5.1"
   }
 }

@@ -232,5 +232,56 @@
       "general",
       "nuxt"
     ]
+  },
+  {
+    "username": "cedriking",
+    "topics": [
+      "Full Stack",
+      "Web3",
+      "Typescript",
+      "Javascript",
+      "Web Development",
+      "CSS",
+      "Prisma",
+      "Blockchain",
+      "Spanish"
+    ]
+  },
+  {
+    "username": "s1mpsondev",
+    "topics": [
+      "threads",
+      "threads-bot",
+      "threads-api",
+      "frontend development",
+      "web development",
+      "typescript",
+      "nextjs",
+      "startups"
+    ]
+  },
+  {
+    "username": "codingmatty",
+    "topics": [
+      "fullstack development",
+      "typescript",
+      "nodejs",
+      "prisma",
+      "graphql",
+      "startups",
+      "indiehacking"
+    ]
+  },
+  {
+    "username": "anderssv",
+    "topics": [
+      "startups",
+      "kotlin",
+      "full stack developemnt",
+      "frontend development",
+      "development",
+      "test driven development",
+      "continuous release"
+    ]
   }
 ]
