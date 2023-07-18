@@ -10,7 +10,7 @@
     <title>{{ title or metadata.title }}</title>
     <link rel="stylesheet" href="{{ '/site.css' | url }}"/>
   </head>
-  <body class="font-sans leading-normal tracking-normal">
+  <body class="font-sans leading-normal tracking-normal bg-base-200 antialiased">
     <main>
       <header class="hero min-h-[33vh]">
         <div class="hero-content text-center">
@@ -41,14 +41,20 @@
         </div>
       </header>
       {% include "pagination.njk" %}
-      <section class="container mx-auto grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <section class="container mx-auto grid md:grid-cols-3 lg:grid-cols-4 gap-4 mb-16">
         {{ content | safe }}
       </section>
-      {% include "pagination.njk" %}</body>
+      {% include "pagination.njk" %}
+    </main>
+    <footer class="mt-16">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">This site is not affiliated with
+          <a href="https://threads.net">Threads</a>
+          in any way. The directory admin is not responsible for the contents of linked profiles</p>
+        <p class="text-sm">Last updated: {{ build.date }} ::
+          <small>{{ build.sha }}</small>
+        </p>
+      </div>
+    </footer>
   </body>
-</html></main><footer>
-<div class="container mx-auto text-center">
-  <p class="text-sm text-gray-600">This site is not affiliated with
-    <a href="https://threads.net">Threads</a>
-    in any way. The directory admin is not responsible for the contents of linked profiles</p>
-</div></body></body></html>
+</html>
