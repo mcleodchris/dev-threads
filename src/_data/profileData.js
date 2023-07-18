@@ -30,13 +30,17 @@ module.exports = async function () {
   // );
   const profileData = [];
 
-  for (const developer of developers) {
-    const data = await limiter.schedule(() =>
-      getProfileData(threadsAPI, developer)
-    );
-    if (data) {
-      profileData.push(data);
+  try {
+    for (const developer of developers) {
+      const data = await limiter.schedule(() =>
+        getProfileData(threadsAPI, developer)
+      );
+      if (data) {
+        profileData.push(data);
+      }
     }
+  } catch (error) {
+    console.error(error);
   }
 
   return profileData;
