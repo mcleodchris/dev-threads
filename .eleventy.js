@@ -11,6 +11,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("replace", (value, search, replacement) =>
     value.replaceAll(search, replacement)
   );
+  eleventyConfig.addShortcode("jsonify", (value) =>
+    JSON.stringify(value, null, 2)
+  );
 
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
