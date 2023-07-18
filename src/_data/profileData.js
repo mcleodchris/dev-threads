@@ -12,16 +12,21 @@ async function getProfileData(threadsAPI, developer) {
 }
 
 module.exports = async function () {
-  const threadsAPI = new ThreadsAPI({
-    username: process.env.THREADSUSER, // Your username
-    password: process.env.THREADSPWD, // Your password
-  });
+  const threadsAPI = new ThreadsAPI();
 
-  await threadsAPI.login();
+  // try {
+  //   await threadsAPI.login();
+  // } catch (error) {
+  //   console.log({
+  //     username: process.env.THREADSUSER, // Your username
+  //     password: process.env.THREADSPWD, // Your password
+  //   });
+  //   console.error(error);
+  // }
 
   const limiter = new Bottleneck({
     maxConcurrent: 1,
-    minTime: 2500,
+    minTime: 500,
   });
   // const profileData = await Promise.all(
   //   developers.map((developer) =>
