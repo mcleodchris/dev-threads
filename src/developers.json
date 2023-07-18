@@ -259,5 +259,17 @@
       "nextjs",
       "startups"
     ]
+  },
+  {
+    "username": "codingmatty",
+    "topics": [
+      "fullstack development",
+      "typescript",
+      "nodejs",
+      "prisma",
+      "graphql",
+      "startups",
+      "indiehacking"
+    ]
   }
 ]
