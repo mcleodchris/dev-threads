@@ -16,6 +16,9 @@ module.exports = async function () {
     username: process.env.THREADSUSER, // Your username
     password: process.env.THREADSPWD, // Your password
   });
+
+  await threadsAPI.login();
+
   const limiter = new Bottleneck({
     maxConcurrent: 1,
     minTime: 2500,
