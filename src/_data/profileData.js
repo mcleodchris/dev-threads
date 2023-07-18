@@ -13,7 +13,7 @@ async function getProfileData(threadsAPI, developer) {
 
 module.exports = async function () {
   const threadsAPI = new ThreadsAPI({
-    username: "DevThreadsDir", // Your username
+    username: process.env.THREADSUSER, // Your username
     password: process.env.THREADSPWD, // Your password
   });
   const limiter = new Bottleneck({
