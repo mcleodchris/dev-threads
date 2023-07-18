@@ -1,4 +1,5 @@
 const { ThreadsAPI } = require("threads-api");
+const Bottleneck = require("bottleneck");
 const developers = require("../developers.json");
 
 async function getProfileData(threadsAPI, developer) {
@@ -11,10 +12,29 @@ async function getProfileData(threadsAPI, developer) {
 }
 
 module.exports = async function () {
-  const threadsAPI = new ThreadsAPI();
-  const profileData = await Promise.all(
-    developers.map((developer) => getProfileData(threadsAPI, developer))
-  );
+  const threadsAPI = new ThreadsAPI({
+    username: "DevThreadsDir", // Your username
+    password: process.env.THREADSPWD, // Your password
+  });
+  const limiter = new Bottleneck({
+    maxConcurrent: 1,
+    minTime: 2500,
+  });
+  // const profileData = await Promise.all(
+  //   developers.map((developer) =>
+  //     limiter.schedule(() => getProfileData(threadsAPI, developer))
+  //   )
+  // );
+  const profileData = [];
+
+  for (const developer of developers) {
+    const data = await limiter.schedule(() =>
+      getProfileData(threadsAPI, developer)
+    );
+    if (data) {
+      profileData.push(data);
+    }
+  }
 
   return profileData;
 };
