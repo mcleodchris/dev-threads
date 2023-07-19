@@ -2,21 +2,36 @@
 layout: default
 pagination:
     data: profileData
-    size: 24
+    size: 48
 ---
 
 <h2 class="sr-only">Profiles</h2>
 {%- for profile in pagination.items %}
   <div class="bg-base-100 text-base-content card-bordered card-compact shadow-md rounded mt-[68px]">
     <div class="card-body items-center">
-      <a href="https://threads.net/@{{ profile.username | url }}" rel="noopener noreferrer" class="">{% img profile.hd_profile_pic_versions[0].url,
+      <a
+        href="https://threads.net/@{{ profile.username | url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block">{% img profile.hd_profile_pic_versions[0].url,
       "profile picture of " + profile.username,
       "180", "",
       "bg-base-100 rounded-full max-w-[120px] -mt-[68px] p-2 mx-2" %}</a>
+      <a
+        href="https://threads.net/@{{ profile.username }}"
+        rel="noopener noreferrer"
+        target="_blank"
+        class=" btn btn-sm rounded-full btn-neutral font-bold place-self-end -mt-[48px]">
+        Follow
+      </a>
       <div class="card-body w-full">
         <div class="card-title">
-          <h2 class=" w-full text-center text-base-content ">
-            <a href="https://threads.net/@{{ profile.username | url }}" rel="noopener noreferrer" class="block text-base-content">
+          <h3 class=" w-full text-center text-base-content ">
+            <a
+              href="https://threads.net/@{{ profile.username | url }}"
+              rel="noopener noreferrer"
+              class="block text-base-content"
+              target="_blank">
               {% if profile.full_name %}
                 {{ profile.full_name }}
               {% else %}
@@ -26,6 +41,7 @@ pagination:
             <small class="">
               <a
                 rel="noopener noreferrer"
+                target="_blank"
                 class="dark:text-neutral-content text-neutral-600"
                 href="https://threads.net/@{{ profile.username | url }}">@{{ profile.username }}</a>
             </small>
@@ -58,24 +74,11 @@ pagination:
                 </svg>
               </small>
             {%- endif %}
-          </h2>
+          </h3>
         </div>
         <p class=" text-base-content ">
           {%- replace profile.biography, '\n', '<br>' %}
         </p>
-      </div>
-      <div class="card-actions text-xl">
-        <a href="https://threads.net/@{{ profile.username }}" rel="noopener noreferrer" class="btn btn-neutral font-bold">
-          View on Threads
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 inline">
-            <path
-              fill-rule="evenodd"
-              d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75
-                0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3
-                3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z"
-              clip-rule="evenodd"/>
-          </svg>
-        </a>
       </div>
     </div>
   </div>
