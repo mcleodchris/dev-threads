@@ -2,6 +2,7 @@ const fs = require("fs");
 const htmlmin = require("html-minifier");
 const img = require("./shortcodes/img.js");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("img", img);
@@ -14,6 +15,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("jsonify", (value) =>
     JSON.stringify(value, null, 2)
   );
+
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
