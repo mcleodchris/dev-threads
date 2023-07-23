@@ -317,5 +317,20 @@
       "full stack development",
       "football"
     ]
-  }
+  }, 
+  {
+    "username": "dunsincodes",
+    "topics": [
+      "frontend development",
+      "javascript",
+      "react",
+      "css",
+      "full stack development",
+      "nextjs", 
+      "mongodb", 
+      "indie hacking", 
+      "open source", 
+      "TypeScript" 
+    ]
+  } 
 ]
