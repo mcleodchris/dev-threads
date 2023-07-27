@@ -343,5 +343,15 @@
       "blockchain technology",
       "technical writing"
     ]
+  },
+  {
+    "username": "sptstoyanov",
+    "topics": [
+      "ai",
+      "mlops",
+      "llms",
+      "machine learning",
+      "agents"
+    ]
   }
 ]
