@@ -413,5 +413,17 @@
         "montana",
         "random"
     ]
+  },
+  {
+    "username": "rodrifit",
+    "topics": [
+      "tech",
+      "science",
+      "ai",
+      "fullstack development",
+      "frontend development",
+      "typescript",
+      "javascript"
+    ]
   }
 ]
