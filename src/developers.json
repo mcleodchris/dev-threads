@@ -389,17 +389,29 @@
     ]
   },
   {
-    "username": "natenorberg",
+    "username": "axelgarciak",
     "topics": [
       "development",
-      "product design",
-      "figma",
-      "frontend dev",
-      "ux",
-      "css",
-      "typescript",
-      "montana",
-      "random"
+      "computing history",
+      "side projects",
+      "careers",
+      "open source",
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "username": "natenorberg",
+      "topics": [
+        "development",
+        "product design",
+        "figma",
+        "frontend dev",
+        "ux",
+        "css",
+        "typescript",
+        "montana",
+        "random"
     ]
   }
 ]
