@@ -388,7 +388,32 @@
       "lifting"
     ]
   },
-  
+  {
+    "username": "axelgarciak",
+    "topics": [
+      "development",
+      "computing history",
+      "side projects",
+      "careers",
+      "open source",
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "username": "natenorberg",
+      "topics": [
+        "development",
+        "product design",
+        "figma",
+        "frontend dev",
+        "ux",
+        "css",
+        "typescript",
+        "montana",
+        "random"
+    ]
+  },
   {
     "username": "rodrifit",
     "topics": [
@@ -398,7 +423,7 @@
       "fullstack development",
       "frontend development",
       "typescript",
-      "javascript",
+      "javascript"
     ]
   }
 ]
