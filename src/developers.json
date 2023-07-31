@@ -387,5 +387,18 @@
       "learning",
       "lifting"
     ]
+  },
+  
+  {
+    "username": "rodrifit",
+    "topics": [
+      "tech",
+      "science",
+      "ai",
+      "fullstack development",
+      "frontend development",
+      "typescript",
+      "javascript",
+    ]
   }
 ]
