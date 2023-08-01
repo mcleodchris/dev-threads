@@ -438,5 +438,19 @@
       "diabetes",
       "philosophy"
     ]
+  },
+  {
+    "username": "fullstackeric",
+    "topics": [
+      "fullstack developer",
+      "frontend development",
+      "web development",
+      "startups",
+      "typescript",
+      "ai",
+      "langchain",
+      "machine learning",
+      "artificial intelligence"
+    ]
   }
 ]
