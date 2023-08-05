@@ -452,5 +452,22 @@
       "machine learning",
       "artificial intelligence"
     ]
+  },
+  {
+    "username": "isburmistrov",
+    "topics": [
+      "tech",
+      "backend development",
+      "large scale distributed systems",
+      "observability",
+      "kotlin",
+      "java",
+      "golang",
+      "Apache Flink",
+      "Stream processing",
+      "low latency systems",
+      "machine learning",
+      "artificial intelligence"
+    ]
   }
 ]
