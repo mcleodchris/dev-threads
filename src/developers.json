@@ -489,10 +489,10 @@
       "azure",
       "learning & development"
     ]
-  }
+  },
   {
     "username": "keiron.dev",
-    "topics" [
+    "topics": [
       "Laravel",
       "SaaS",
       "Automation",
