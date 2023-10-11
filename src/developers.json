@@ -532,5 +532,22 @@
       "Tech",
       "Startups"
     ]
+  },
+  {
+    "username": "tomjohnson3",
+    "topics": [
+      "AI",
+      "Machine Learning",
+      "Robotics",
+      "Distributed Systems",
+      "Embedded Systems",
+      "Speech Recognition",
+      "Starting a Company",
+      "Raising VC Funding",
+      "Running a Dev Team",
+      "Javascript",
+      "Rust",
+      "Running"
+    ]
   }
 ]
